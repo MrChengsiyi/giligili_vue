@@ -4,6 +4,9 @@
       <el-form-item label="标题">
         <el-input v-model="form.title"></el-input>
       </el-form-item>
+      <el-form-item label="视频链接">
+        <el-input v-model="form.url"></el-input>
+      </el-form-item>
       <el-form-item label="描述">
         <el-input v-model="form.info"></el-input>
       </el-form-item>
@@ -43,7 +46,7 @@ export default {
       form: {
         title: '',
         info: '',
-        avatar： '',
+        avatar: '',
       },
     };
   },

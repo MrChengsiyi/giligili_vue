@@ -4,7 +4,7 @@
         <el-row>
             <el-col :span="6" v-for="video in videos" :key="video.id">
               <el-card >
-                <img class="video-avatar" src="https://img9.doubanio.com/view/photo/l/public/p2522483625.webp" >
+                <img class="video-avatar" :src="video.avatar" >
                 <div >
                   <div>{{video.title}}</div>
                   <div class="info">{{video.info}}</div>
